@@ -7,9 +7,9 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-				<link rel="stylesheet" href="/css/app.css">
+		<link rel="stylesheet" href="/css/app.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!-- Styles -->
         <style>
             html, body {
@@ -67,7 +67,9 @@
     <body>
 	<section id="app-layout">
       @include('includes.side-menu')
-      @yield('content')
+      <section id="content-section">
+        @yield('content')
+      </section>
     </section>
     </body>
 </html>
